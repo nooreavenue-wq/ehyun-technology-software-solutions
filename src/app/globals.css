@@ -98,7 +98,7 @@ body {
     @apply h-px w-full bg-gradient-to-r from-transparent via-ink-line to-transparent;
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 bg-signal text-white px-7 py-3.5 text-sm font-medium transition-all duration-300 ease-luxe hover:bg-signal-light;
+    @apply inline-flex items-center justify-center gap-2 border border-paper/20 bg-[#011341] text-white px-7 py-3.5 text-sm font-medium transition-all duration-300 ease-luxe hover:bg-signal-light;
   }
   .btn-outline {
     @apply inline-flex items-center justify-center gap-2 border border-paper/20 text-paper px-7 py-3.5 text-sm font-medium transition-all duration-300 ease-luxe hover:border-signal hover:text-signal-light;
