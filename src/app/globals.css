@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Light theme (default) — main colors: blue + white */
+  color-scheme: light;
+  --c-ink: 255 255 255; /* page background */
+  --c-ink-surface: 243 246 252; /* alt section background */
+  --c-ink-raised: 233 239 250; /* card / raised surface background */
+  --c-ink-line: 219 228 244; /* borders / hairlines */
+  --c-paper: 15 23 42; /* primary text (dark navy on white) */
+  --c-paper-pure: 10 13 20; /* strongest-contrast text */
+  --c-signal: 76 126 255; /* brand blue */
+  --c-signal-light: 37 87 214; /* accent text/links — deepened for contrast on white */
+  --c-signal-dim: 213 225 255; /* soft blue tint */
+  --c-teal: 13 148 130; /* deepened for contrast on white */
+  --c-teal-light: 15 170 150;
+}
+
+.dark {
+  color-scheme: dark;
+  --c-ink: 10 13 20;
+  --c-ink-surface: 14 18 27;
+  --c-ink-raised: 19 24 38;
+  --c-ink-line: 29 35 51;
+  --c-paper: 245 247 251;
+  --c-paper-pure: 255 255 255;
+  --c-signal: 76 126 255;
+  --c-signal-light: 125 162 255;
+  --c-signal-dim: 44 78 191;
+  --c-teal: 23 214 181;
+  --c-teal-light: 92 239 214;
+}
+
+/* Google Translate widget: keep the underlying engine but hide its default UI —
+   we drive it entirely through our own EN/KO toggle in the navbar. */
+.goog-te-banner-frame,
+.goog-te-gadget-icon,
+#google_translate_element {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+  position: static !important;
+}
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+@layer base {
+  * {
+    @apply border-ink-line;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink text-paper font-sans antialiased transition-colors duration-300;
+  }
+  ::selection {
+    background: #4c7eff;
+    color: #ffffff;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-ink;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-line;
+  }
+  :focus-visible {
+    outline: 1px solid #4c7eff;
+    outline-offset: 3px;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-[11px] md:text-xs tracking-widest2 uppercase text-signal-light font-medium;
+  }
+  .section-pad {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-ink-line to-transparent;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-signal text-white px-7 py-3.5 text-sm font-medium transition-all duration-300 ease-luxe hover:bg-signal-light;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-paper/20 text-paper px-7 py-3.5 text-sm font-medium transition-all duration-300 ease-luxe hover:border-signal hover:text-signal-light;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-1.5 text-paper/70 text-sm font-medium transition-colors duration-300 hover:text-signal-light;
+  }
+  .label-input {
+    @apply text-[11px] tracking-widest2 uppercase text-paper/45 font-medium;
+  }
+  .field-input {
+    @apply w-full bg-ink-raised border border-ink-line px-4 py-3 text-paper placeholder:text-paper/30 focus:border-signal outline-none transition-colors duration-300 text-sm;
+  }
+  .card {
+    @apply bg-ink-surface border border-ink-line transition-colors duration-300;
+  }
+  .pill {
+    @apply text-xs px-3 py-1.5 border border-ink-line text-paper/60 bg-ink-raised;
+  }
+}
+
+
+/* ---------------------------------------- */
+
+body {
+  top: 0 !important;
+  position: static !important;
+}
+
+html {
+  margin-top: 0 !important;
+}
+
+/* Optional: hide the floating Google gadget if it appears */
+.skiptranslate {
+  display: none !important;
+}
+/* Google Translate widget: keep the underlying engine but hide its default UI —
+   we drive it entirely through our own EN/KO toggle in the navbar. */
+.goog-te-banner-frame,
+.goog-te-gadget-icon,
+#google_translate_element {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+  position: static !important;
+}
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
