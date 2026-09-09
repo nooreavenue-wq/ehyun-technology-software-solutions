@@ -167,7 +167,7 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       "Delivered a working analysis platform that reduced the manual effort involved in environmental compliance assessments.",
     technologies: ["Next.js", "Node.js", "PostgreSQL"],
-    image: "/Sitenorm.png",
+    image: "/SiteNorm.png",
     links: {
       playStore: "https://play.google.com/store/apps/details?id=com.agroclima.sitenorm&hl=en",
       appStore: "https://apps.apple.com/us/app/sitenorm/id6783234170",
