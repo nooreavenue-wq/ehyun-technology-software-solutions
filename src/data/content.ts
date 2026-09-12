@@ -1,13 +1,6 @@
 // NOTE: Quotes below are placeholder statements meant to demonstrate the layout —
 // replace with each leader's real quote before publishing. Photos are placeholders too.
 export const leadershipTeam = [
-    {
-    name: "Martin",
-    role: "COO & Managing Director",
-    quote:
-      "Great technology is only half the equation. The other half is operational discipline — clear timelines, transparent communication, and delivery our clients can actually depend on.",
-    image: "/Martin.png",
-  },
   {
     name: "Elma Binte Tareq",
     role: "Founder & CEO",
@@ -17,11 +10,19 @@ export const leadershipTeam = [
   },
     {
     name: "Shakawat Hossain Tareq",
-    role: "Co-Founder & CEO",
+    role: "Co-Founder & COO",
     quote:
       "We started Ehyun because we believe technology should solve real business problems, not just look impressive in a pitch deck. Every project we take on has to earn its place in a client's business.",
     image: "/Shakawat Hossain Tareq.png",
   },
+    {
+    name: "Dustin D. Lee",
+    role: "IT Advisor & Technology Strategist",
+    quote:
+      "Great technology is only half the equation. The other half is operational discipline — clear timelines, transparent communication, and delivery our clients can actually depend on.",
+    image: "/leee.png",
+  },
+  
 
 ];
 
@@ -63,9 +64,9 @@ export const teamByFunction: TeamFunctionGroup[] = [
         image: avatar("arif-hasan"),
       },
       {
-        name: "Nayeem Rahman",
-        role: "Project Manager",
-        image: avatar("nayeem-rahman"),
+        name: "Moazzem Hossen Bhuiyan",
+        role: "Project Manager & Developer",
+        image: avatar("moazzem-hossen-bhuiyan"),
       },
       {
         name: "Sakib Ahmed",

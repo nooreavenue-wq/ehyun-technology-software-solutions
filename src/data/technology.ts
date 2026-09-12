@@ -18,7 +18,7 @@ export const techStack: TechCategory[] = [
   {
     category: "Mobile Development",
     description: "We develop cross-platform mobile applications using technologies such as React Native, supporting both Android and iOS efficiently.",
-    items: ["React Native", "iOS", "Android", "Cross-Platform Architecture"],
+    items: ["React Native", "iOS", "Android", "Cross-Platform Architecture","Flutter"],
   },
   {
     category: "Databases",

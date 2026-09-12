@@ -46,9 +46,12 @@ export default function Navbar() {
         )}
       >
         <div className="container flex items-center justify-between h-18 lg:h-20">
-          <Link href="/" className="flex items-center gap-2 font-display text-xl font-semibold text-paper">
-            <Image src={Logo} alt="EHYUN Logo" width={3200} height={3200} className="w-[240px] h-[130px]" />
+          <Link href="/" className="flex flex-col items-center font-display text-xl font-semibold text-paper">
+            <Image src={Logo} alt="EHYUN Logo" width={3200} height={3200} className="w-[240px] h-[140px] mt-4" /> 
+     
+          
           </Link>
+           
 
           <nav className="hidden lg:flex items-center gap-7">
             {navLinks.map((link) => (

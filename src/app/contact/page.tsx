@@ -34,14 +34,14 @@ export default function ContactPage() {
                     <Mail size={16} className="text-signal-light mt-0.5 shrink-0" />
                     <div>
                       <p className="text-paper/40 text-xs uppercase tracking-wider">Email</p>
-                      <a href="mailto:hello@ehyun.io" className="text-paper hover:text-signal-light transition-colors">hello@ehyun.io</a>
+                      <a href="mailto:ehyunedu@gmail.com" className="text-paper hover:text-signal-light transition-colors">ehyunedu@gmail.com</a>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <MapPin size={16} className="text-signal-light mt-0.5 shrink-0" />
                     <div>
                       <p className="text-paper/40 text-xs uppercase tracking-wider">Location</p>
-                      <p className="text-paper">Bangladesh</p>
+                      <p className="text-paper">EHYUN IT & MANAGEMENT<br />R# 14, H# 11, Level-12, Dhanmondi, Dhaka 1207</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">

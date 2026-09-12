@@ -58,11 +58,14 @@ export default function Footer() {
             <ul className="space-y-3.5 text-sm text-paper/55">
               <li className="flex items-center gap-2.5">
                 <Mail size={14} className="text-signal-light shrink-0" />
-                <a href="mailto:hello@ehyun.io" className="hover:text-signal-light transition-colors">hello@ehyun.io</a>
+                <a href="mailto:ehyunedu@gmail.com" className="hover:text-signal-light transition-colors">ehyunedu@gmail.com</a>
               </li>
               <li className="flex items-center gap-2.5">
                 <MapPin size={14} className="text-signal-light shrink-0" />
-                Bangladesh
+                <span>
+                  EHYUN IT & MANAGEMENT<br />
+                  R# 14, H# 11, Level-12, Dhanmondi, Dhaka 1207
+                </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Linkedin size={14} className="text-signal-light shrink-0" />
