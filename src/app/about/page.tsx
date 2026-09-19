@@ -142,7 +142,7 @@ export default function AboutPage() {
                 description="A small, hands-on leadership team that stays close to every engagement — from the first discovery call to final delivery."
               />
             </Reveal>
-            <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mt-14 grid grid-cols-1 md:grid-cols-4 gap-6">
               {leadershipTeam.map((leader, i) => (
                 <Reveal key={leader.name} delay={i * 0.08}>
                   <div className="card overflow-hidden h-full flex flex-col">

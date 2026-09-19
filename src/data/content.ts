@@ -22,6 +22,13 @@ export const leadershipTeam = [
       "Great technology is only half the equation. The other half is operational discipline — clear timelines, transparent communication, and delivery our clients can actually depend on.",
     image: "/leee.png",
   },
+    {
+    name: " Baek Jong Jin",
+    role: "IT Advisor & Technology Strategist",
+    quote:
+      "Technology creates value when it is built on security, strategy, and experience. My focus is helping organizations navigate complex ICT challenges and build secure, sustainable digital solutions.",
+    image: "/Baek.png",
+  },
   
 
 ];
